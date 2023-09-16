@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="_45sdp" type="dimen" format="float">58.50</item>
+    <dimen name="_250sdp">325.00dp</dimen>
+    <dimen name="_20sdp">26.00dp</dimen>
+</resources>
