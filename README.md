@@ -77,7 +77,7 @@ Insert gif or link to demo
 2. Follow the installation instructions in the respective subprojects (Android and Flutter).
 3. Run the application and explore the features.
     
-## Authors
+## Collaborator 
 
 - *Rajeev Kumar Behera*
   - Role: Ideation and Android Application (Map Part, Direction API)
