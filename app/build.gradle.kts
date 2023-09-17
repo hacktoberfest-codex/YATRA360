@@ -6,6 +6,7 @@ android {
     namespace = "com.example.techyatra"
     compileSdk = 33
 
+
     defaultConfig {
         applicationId = "com.example.techyatra"
         minSdk = 26
@@ -32,7 +33,10 @@ android {
 }
 
 dependencies {
+    implementation ("com.google.android.gms:play-services-maps:17.0.0")
+    implementation ("com.google.android.gms:play-services-location:18.0.0")
 
+    implementation ("com.google.maps:google-maps-services:0.17.0")
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")

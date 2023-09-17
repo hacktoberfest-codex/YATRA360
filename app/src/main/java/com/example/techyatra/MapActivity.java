@@ -48,6 +48,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         setupShowRouteButton();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.map, mapFragment)
+                .commit();
+
     }
 
     @Override
@@ -70,37 +74,35 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap.addMarker(gurugramOptions);
         haryanaMarker = mMap.addMarker(haryanaMarkerOptions);
 
-        // Set a click listener for the Haryana marker
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
                 if (marker.equals(haryanaMarker)) {
-                    // Handle the click on the Haryana marker
-                    // Change the marker's appearance to indicate it's selected
+
                     haryanaMarker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-                    return true; // Consume the click event
+                    return true;
                 } else {
-                    // Deselect any previously selected marker
+
                     if (haryanaMarker != null) {
                         haryanaMarker.setIcon(BitmapDescriptorFactory.defaultMarker());
                     }
                 }
-                return false; // Allow default behavior for other markers
+                return false;
             }
         });
 
-        // Set a map click listener to deselect the marker when tapping the map
+
         mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
             @Override
             public void onMapClick(LatLng latLng) {
-                // Deselect the selected marker
+
                 if (haryanaMarker != null) {
                     haryanaMarker.setIcon(BitmapDescriptorFactory.defaultMarker());
                 }
             }
         });
 
-        // Move the camera to a suitable position (e.g., Delhi)
+
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(delhiLatLng, 10));
     }
 
@@ -124,10 +126,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission granted, initialize the map
+
                 initMap();
             } else {
-                // Permission denied, handle accordingly (e.g., show a message)
+
                 Toast.makeText(this, "Location permission denied", Toast.LENGTH_SHORT).show();
             }
         }
@@ -139,7 +141,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 if (haryanaMarker != null) {
-                    // Handle the button click to show the route from Delhi to Haryana
+
                     LatLng delhiLatLng = new LatLng(20.249243, 85.801250); // Delhi coordinates
                     LatLng haryanaLatLng = haryanaMarker.getPosition();
                     calculateDirections(delhiLatLng, haryanaLatLng);
@@ -181,14 +183,14 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         double totalDistance = 0;
 
         if (points.size() < 2) {
-            return totalDistance; // Not enough points to calculate distance
+            return totalDistance;
         }
 
         for (int i = 0; i < points.size() - 1; i++) {
             LatLng startPoint = points.get(i);
             LatLng endPoint = points.get(i + 1);
 
-            // Calculate the distance between two consecutive points using the Haversine formula
+
             double distance = calculateHaversineDistance(startPoint, endPoint);
             totalDistance += distance;
             double totalDistanceInMeters = calculateDistanceOfPolyline(currentPolyline.getPoints());
@@ -200,7 +202,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     }
 
     private double calculateHaversineDistance(LatLng point1, LatLng point2) {
-        // Radius of the Earth in meters
+
         final double R = 6371000.0; // Earth's radius in meters
 
         double lat1 = Math.toRadians(point1.latitude);
@@ -208,7 +210,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         double lat2 = Math.toRadians(point2.latitude);
         double lon2 = Math.toRadians(point2.longitude);
 
-        // Haversine formula to calculate distance between two points on the Earth's surface
+
         double dlon = lon2 - lon1;
         double dlat = lat2 - lat1;
         double a = Math.pow(Math.sin(dlat / 2), 2) + Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(dlon / 2), 2);
@@ -223,7 +225,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         @Override
         protected String doInBackground(String... urls) {
             try {
-                // Make an HTTP request and get the JSON response
+
                 String url = urls[0];
                 HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -243,26 +245,19 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         @Override
         protected void onPostExecute(String response) {
             if (response != null) {
-                // Parse the JSON response and extract the route information
-                // You can use a JSON parsing library like Gson for this
-                // For brevity, I'm skipping the parsing code here
 
-                // Once you have the route information, draw it on the map
-                // Create a PolylineOptions object and add points to it
                 PolylineOptions polylineOptions = new PolylineOptions();
-                // Add the route points here
 
-                // Customize the polyline appearance as needed
                 polylineOptions.color(ContextCompat.getColor(MapActivity.this, R.color.routeColor));
                 polylineOptions.width(10);
 
-                // Add the polyline to the map
+
                 if (currentPolyline != null) {
-                    currentPolyline.remove(); // Remove previous polyline if exists
+                    currentPolyline.remove();
                 }
                 currentPolyline = mMap.addPolyline(polylineOptions);
             } else {
-                // Handle the case where there was an error fetching directions
+
                 Toast.makeText(MapActivity.this, "Error fetching directions", Toast.LENGTH_SHORT).show();
             }
         }
