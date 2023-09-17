@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void init() {
-        Button btnmap = findViewById(R.id.btnmap);
+        Button btnmap = findViewById(R.id.signupbutton1);  // edit it laater
         btnmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
