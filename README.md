@@ -65,8 +65,10 @@ YATRA360 presents a revolutionary solution in the field of Travel & Tourism. We 
 
 ## Screenshots
 
--
--
+-![WhatsApp Image 2023-09-08 at 9 21 43 AM](https://github.com/ITER-SIH/Team-26/assets/98466519/4b4639e8-ae00-4dd7-bf02-282139011a52)
+
+-![WhatsApp Image 2023-09-08 at 9 21 44 AM (1)](https://github.com/ITER-SIH/Team-26/assets/98466519/b7314079-06a6-4dce-9478-bcaafc60618d)
+
 
 
 
