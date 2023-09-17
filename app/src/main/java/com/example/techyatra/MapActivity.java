@@ -7,5 +7,6 @@ import com.google.android.gms.maps.model.Marker;
 
 public class MapActivity extends Activity {
     private GoogleMap mMap;
+    int max;
     private Marker haryanaMarker;
 }
