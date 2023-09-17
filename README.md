@@ -100,7 +100,8 @@ Insert gif or link to demo
   - Role: Design Lead, Graphics and Layout of App (Figma)
 ## Support
 
-For support, email fake@fake.com 
+For support, email rajeev.220077@gmail.com ,rajdharmesh666@gmail.com , ranjanrashmi@gmail.com ,goswamiyajy@gmail.com , adya.monsoon@gmail.com , papalipriyaratansahu@gmail.com
+
 
 ## License
 
