@@ -9,7 +9,12 @@
     <item name="_25sdp" type="dimen" format="float">133.90</item>
     <item name="_12sdp" type="dimen" format="float">39.00</item>
     <item name="_45sdp" type="dimen" format="float">58.50</item>
+    <item name="_52sdp" type="dimen" format="float">67.60</item>
     <dimen name="_250sdp">325.00dp</dimen>
     <dimen name="_20sdp">26.00dp</dimen>
+    <dimen name="_42sdp">54.60dp</dimen>
+    <dimen name="_260sdp">338.00dp</dimen>
+    <dimen name="_15sdp">19.50dp</dimen>
+    <dimen name="_124sdp">161.20dp</dimen>
 
 </resources>

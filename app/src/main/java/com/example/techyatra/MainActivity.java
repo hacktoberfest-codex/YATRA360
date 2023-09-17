@@ -13,9 +13,11 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.GoogleApiAvailabilityLight;
+//import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
+   // FirebaseAuth auth;
     private static final int ERROR_DIALOG_REQUEST = 9001;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
