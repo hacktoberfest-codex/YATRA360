@@ -1,4 +1,4 @@
-# Team-26
+# Team-26 <br>
 
 # TechYatra - Student Innovation
 
@@ -11,12 +11,12 @@
 *Problem Statement Title:* Student Innovation
 
 ## Team Details
-
 - *Team Name:* TechYatra
 - *Team Leader:* Rajeev Kumar Behera
 - *Institute Code (AISHE):* C-42709
 - *Institute Name:* Institute of Technical Education and Research, Siksha 'O' Anusandhan (Deemed to be University), Bhubaneswar
 - *Theme:* Travel & Tourism
+- 
 ## YATRA360
 
 YATRA360 presents a revolutionary solution in the field of Travel & Tourism. We integrate effective image retrieval with an indoor navigation system to enhance the tourist experience. Our application not only aids tourists and newcomers but also contributes to the growth of the tourism industry and simplifies navigation in larger premises.
@@ -69,6 +69,7 @@ Insert gif or link to demo
 
 
 ## Screenshots
+
 
 
 ## Installation
