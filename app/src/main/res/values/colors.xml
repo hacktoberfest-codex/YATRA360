@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple_200">#C461E7</color>
+    <color name="routeColor">#0C9DE0</color>
 </resources>
