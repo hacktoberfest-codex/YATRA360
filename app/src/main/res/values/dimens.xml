@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_100sdp">438.10dp</dimen>
+    <dimen name="_200sdp">130.00dp</dimen>
+    <dimen name="_337sdp">438.10dp</dimen>
+    <dimen name="_103sdp">133.90dp</dimen>
+    <dimen name="_30sdp">39.00dp</dimen>
+    <item name="_25sdp" type="dimen" format="float">133.90</item>
+    <item name="_12sdp" type="dimen" format="float">39.00</item>
+</resources>
