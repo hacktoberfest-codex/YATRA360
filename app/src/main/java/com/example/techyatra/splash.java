@@ -31,7 +31,7 @@ public class splash extends AppCompatActivity {
 
         name.setAnimation(topAnim);
         logo.setAnimation(bottomAnim);
-
+//will update it
 
 
         new Handler().postDelayed(new Runnable() {
