@@ -50,6 +50,12 @@ TechYatra presents a revolutionary solution in the field of Travel & Tourism. We
 - Voice-enabled system for on-the-go information
 - Tell and Seek: Suggest both heard and unheard places based on user preferences
 
+### Screenshots
+- ![WhatsApp Image 2023-09-08 at 9 21 43 AM](https://github.com/ITER-SIH/Team-26/assets/104255827/c07db394-7399-45be-8e8b-80b29c4df245)
+- ![WhatsApp Image 2023-09-08 at 9 21 44 AM (1)](https://github.com/ITER-SIH/Team-26/assets/104255827/44669db7-b9bf-481c-9bef-56661e9c1912)
+
+
+
 
 
 ## Team Members
