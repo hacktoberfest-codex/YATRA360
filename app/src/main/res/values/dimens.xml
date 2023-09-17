@@ -6,10 +6,10 @@
     <dimen name="_337sdp">438.10dp</dimen>
     <dimen name="_103sdp">133.90dp</dimen>
     <dimen name="_30sdp">39.00dp</dimen>
-    <item name="_25sdp" type="dimen" format="float">133.90</item>
-    <item name="_12sdp" type="dimen" format="float">39.00</item>
-    <item name="_45sdp" type="dimen" format="float">58.50</item>
-    <item name="_52sdp" type="dimen" format="float">67.60</item>
+    <item name="_25sdp" type="dimen" format="float">133.90dp</item>
+    <item name="_12sdp" type="dimen" format="float">39.00dp</item>
+    <item name="_45sdp" type="dimen" format="float">58.50dp</item>
+    <item name="_52sdp" type="dimen" format="float">67.60dp</item>
     <dimen name="_250sdp">325.00dp</dimen>
     <dimen name="_20sdp">26.00dp</dimen>
     <dimen name="_42sdp">54.60dp</dimen>
