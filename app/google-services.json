@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "866808743726",
+    "project_id": "yatra-360",
+    "storage_bucket": "yatra-360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866808743726:android:d905e61ffe1bd30ff05cbf",
+        "android_client_info": {
+          "package_name": "com.ps.yatra360"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAskyGjc300wXjsMXKIQkG8I5_3dtXKZ9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

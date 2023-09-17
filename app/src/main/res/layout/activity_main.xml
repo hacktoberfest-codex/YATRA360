@@ -9,9 +9,9 @@
 
     <Button
         android:id="@+id/signupbutton1"
-        android:layout_width="380dp"
-        android:layout_height="57dp"
-        android:backgroundTint="#8210AA"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:backgroundTint="@color/purple_200"
         android:text="Capture Location"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
@@ -19,15 +19,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
-
-
+        app:layout_constraintVertical_bias="0.361"
+        />
     <Button
         android:id="@+id/signupbutton2"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
-        android:layout_centerInParent="true"
-        android:backgroundTint="#8210AA"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:backgroundTint="@color/purple_200"
         android:text="Set Destination"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
@@ -35,14 +33,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintVertical_bias="0.482"
+        android:layout_centerInParent="true"
 
-        />
+    />
+
+
+
 
     <ImageView
         android:id="@+id/myImageView"
-        android:layout_width="45dp"
-        android:layout_height="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
@@ -53,8 +55,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.886"
@@ -65,27 +67,31 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="57dp"
-        android:layout_height="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.363"
+        app:layout_constraintVertical_bias="0.366"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="42dp"
-        android:layout_height="41dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintVertical_bias="0.483"
         app:srcCompat="@android:drawable/ic_dialog_map" />
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

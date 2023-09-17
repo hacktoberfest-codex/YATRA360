@@ -1,4 +1,5 @@
-package com.example.techyatra;
+package com.ps.yatra360;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -31,7 +32,7 @@ public class splash extends AppCompatActivity {
 
         name.setAnimation(topAnim);
         logo.setAnimation(bottomAnim);
-//will update it
+
 
 
         new Handler().postDelayed(new Runnable() {

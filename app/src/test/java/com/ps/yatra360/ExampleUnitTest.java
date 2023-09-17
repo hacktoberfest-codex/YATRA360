@@ -1,4 +1,4 @@
-package com.example.techyatra;
+package com.ps.yatra360;
 
 import org.junit.Test;
 
