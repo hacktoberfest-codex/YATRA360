@@ -35,7 +35,6 @@ TechYatra presents a revolutionary solution in the field of Travel & Tourism. We
 - Android Studio (JAVA): Android App Development
 - Firebase: Database Management
 - Machine Learning: Image Processing
-- API Chaining: Integration of Multiple APIs
 - Google Maps SDK: Mapping Services
 
 ### Dependencies:
@@ -50,6 +49,7 @@ TechYatra presents a revolutionary solution in the field of Travel & Tourism. We
 - Showcase frequently visited/popular places in India
 - Voice-enabled system for on-the-go information
 - Tell and Seek: Suggest both heard and unheard places based on user preferences
+
 
 
 ## Team Members
